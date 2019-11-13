@@ -3,21 +3,21 @@ After installing and loading the pr2database from the GitHub website, changes we
 
 Selecting sequences from a specific taxon:
 
-Select all the available sequences for the Suessiales in replacement of Mamiellophyceae Ostreococcus
+  Select all the available sequences for the Suessiales in replacement of Mamiellophyceae Ostreococcus
 
-  # Filter only the sequences for which the column genus contains Suessiales
-  pr2_sues <- pr2 %>% dplyr::filter(genus == "Suessiales")
+   # Filter only the sequences for which the column genus contains Suessiales
+    pr2_sues <- pr2 %>% dplyr::filter(genus == "Suessiales")
 
-  # Select only the columns of interest
-  pr2_sues <- pr2_sues %>% dplyr::select( genbank_accession, species, 
+   # Select only the columns of interest
+    pr2_sues <- pr2_sues %>% dplyr::select( genbank_accession, species, 
                                               pr2_sample_type, gb_strain, gb_clone, 
                                               pr2_latitude, pr2_longitude, 
                                               sequence_length, sequence  )
   
-  pr2_sues
+    pr2_sues
   
-Make an additional instruction to export Suessiales data 
+ Make an additional instruction to export Suessiales data 
   # Export data to the file   
-  write.table(pr2_sues, "~/analysis/pr2_sues.tsv", sep="\t", quote=F, col.names=NA)
+    write.table(pr2_sues, "~/analysis/pr2_sues.tsv", sep="\t", quote=F, col.names=NA)
   
-Continue with the provided instructions. Continue to subsitute Ostreococcus with Suessiales
+Continue with the provided instructions with the subsitution of Ostreococcus with Suessiale
