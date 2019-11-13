@@ -17,7 +17,8 @@ Selecting sequences from a specific taxon:
     pr2_sues
   
   Make an additional instruction to export Suessiales data 
-   # Export data to the file   
+  
+      # Export data to the file   
     write.table(pr2_sues, "~/analysis/pr2_sues.tsv", sep="\t", quote=F, col.names=NA)
   
   Continue with the provided instructions with the subsitution of Ostreococcus with Suessiale
